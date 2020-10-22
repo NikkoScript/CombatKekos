@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{5bfbe37c-0f44-41c1-93f1-c8315f6e133c}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)abilite.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)arme.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)armure.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)caracteristique.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)coefDegPhys.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)controllerPerso.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)degat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)equipement.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)inventaire.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)personnage.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RNGClasse.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sort.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)abilite.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)arme.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)armure.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)caracteristique.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)coefDegPhys.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)controllerPerso.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)degat.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)equipement.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)inventaire.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)personnage.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)RNGClasse.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sort.cpp" />
+  </ItemGroup>
+</Project>
