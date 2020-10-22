@@ -136,6 +136,11 @@ namespace TestCombat
 			abilite ab(degat(10,0,0),"piercingtruth", 10,1,1);
 			Assert::AreEqual(11, ab.degatinflige(*perso1, *perso2));
 		}
+
+		TEST_METHOD(testabequal ) {
+			abilite ab(degat(), "test", 10, 10, 1.0f);
+			Assert::IsTrue(ab == "test");
+		}
 	};
 
 	TEST_CLASS(TestCOefDegPhysique) {
