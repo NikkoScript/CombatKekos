@@ -1,5 +1,5 @@
 #pragma once
-#include <degat.h>
+#include "degat.h"
 class coefDegPhys
 {
 private :
