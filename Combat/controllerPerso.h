@@ -13,8 +13,9 @@ public :
 	personnage &getPerso() const;
 	std::vector<abilite> getLivreSort() const;
 	void addAbilite(abilite const& ab);
+	// renvoi l'abiloité avec le nom== nom
+	// return null si non trouvé.
 	abilite *searchabilite(std::string nom);
-
 
 };
 
