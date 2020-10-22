@@ -57,3 +57,15 @@ bool abilite::utiliser(personnage lanceur, personnage cible)
 	cible.infligedegat(degatinflige(lanceur, cible));
 	return true;
 }
+
+bool abilite::isequal(std::string value)
+{
+	if (nom == value)
+		return true;
+	return false;
+}
+
+bool operator==(abilite ab, std::string n)
+{
+	return ab.isequal(n);
+}

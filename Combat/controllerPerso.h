@@ -13,7 +13,7 @@ public :
 	personnage &getPerso() const;
 	std::vector<abilite> getLivreSort() const;
 	void addAbilite(abilite const& ab);
-	abilite searchabilite(std::string nom) const;
+	abilite *searchabilite(std::string nom);
 
 
 };

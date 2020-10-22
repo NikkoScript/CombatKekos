@@ -25,6 +25,7 @@ public :
 	// enleve la vie et l'energie au lanceur et cible
 	// ne vérifie pas les conditions de lancé ( energie suffisante , cooldown )
 	bool utiliser(personnage lanceur, personnage cible);
+	bool isequal(std::string value);
 
 };
-
+bool operator==(abilite ab, std::string n);
