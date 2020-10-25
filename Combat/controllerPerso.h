@@ -8,9 +8,9 @@ private:
 	personnage *perso;
 	std::vector<abilite> livresort;
 public : 
-	controllerPerso(personnage &p);
-	void setPerso(personnage &p);
-	personnage &getPerso() const;
+	controllerPerso(personnage *p);
+	void setPerso(personnage *p);
+	personnage *getPerso() const;
 	std::vector<abilite> getLivreSort() const;
 	void addAbilite(abilite const& ab);
 	// renvoi l'abiloité avec le nom== nom

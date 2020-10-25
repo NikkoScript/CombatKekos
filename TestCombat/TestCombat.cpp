@@ -2,10 +2,11 @@
 #include "degat.h"
 #include "caracteristique.h"
 #include "RNGClasse.h"
-#include <personnage.h>
-#include <abilite.h>
+#include "personnage.h"
+#include "abilite.h"
 #include <iostream>
-#include <coefDegPhys.h>
+#include "coefDegPhys.h"
+#include "controllerPerso.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -188,6 +189,16 @@ namespace TestCombat
 			Assert::AreEqual(2.2f, coef.multDeg(perf));
 			Assert::AreEqual(1.8f, coef.multDeg(impact));
 			Assert::AreEqual(2.0f, coef.multDeg(tranchant));
+		}
+	};
+
+	TEST_CLASS(TestControllerPerso) {
+		TEST_METHOD(testcreate) {
+			personnage *perso1;
+			perso1 = new personnage();
+			controllerPerso cperso1(perso1);
+			Assert::AreEqual(perso1->getNom(), cperso1.getPerso()->getNom());
+
 		}
 	};
 }

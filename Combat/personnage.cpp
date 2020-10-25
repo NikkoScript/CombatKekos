@@ -57,6 +57,13 @@ int personnage::consume(int c)
 	return energieAct;
 }
 
+bool personnage::isequal(std::string value) const
+{
+	if (nom == value)
+		return true;
+	return false;
+}
+
 int personnage::infligedegat(int d)
 {
 	vieAct -= d;
@@ -65,4 +72,7 @@ int personnage::infligedegat(int d)
 	return vieAct;
 }
 
-
+bool operator==(personnage perso, std::string value)
+{
+	return perso.isequal(value);
+}

@@ -14,6 +14,7 @@ private :
 	int vieAct;
 	int energieMax;
 	int energieAct;
+	// le nom du personnage doit être unique .
 	std::string nom;
 
 public: 
@@ -28,10 +29,14 @@ public:
 	std::string getNom() const;
 	inventaire getInv() const;
 	int consume(int c);
+	// verifie que nom==value
+	bool isequal(std::string value) const;
 
 
 	// param: int degat infligé 
 	//return : valeur modifié des pv
 	int infligedegat(int);
 };
+// appel a isequal
+bool operator==(personnage perso, std::string value);
 

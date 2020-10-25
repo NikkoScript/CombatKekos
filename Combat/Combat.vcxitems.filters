@@ -13,6 +13,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)RNGClasse.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)sort.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)controllerPerso.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)equipe.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)arme.h">
@@ -49,6 +50,9 @@
       <Filter>header</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)controllerPerso.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)equipe.h">
       <Filter>header</Filter>
     </ClInclude>
   </ItemGroup>

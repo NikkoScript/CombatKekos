@@ -21,6 +21,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)coefDegPhys.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)controllerPerso.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)degat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)equipe.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)equipement.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)inventaire.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)personnage.h" />
@@ -35,6 +36,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)coefDegPhys.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)controllerPerso.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)degat.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)equipe.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)equipement.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)inventaire.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)personnage.cpp" />

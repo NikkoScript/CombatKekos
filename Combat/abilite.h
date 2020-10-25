@@ -6,6 +6,7 @@ class abilite
 {
 protected:
 	degat deg;
+	//Warning :  le nom de la compétence doit être unique pour chaque compétences différentes
 	std::string nom;
 	float bonus;
 	int consume;

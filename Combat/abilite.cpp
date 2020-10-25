@@ -24,7 +24,7 @@ void abilite::decrLastUse()
 
 float abilite::chanceToucher(personnage const& lanceur, personnage const& cible) const
 {
-	int precision = lanceur.getcarac().getCarac(carac::dexterite) + lanceur.getInv().getArme()->getprecision();
+	int precision = lanceur.getcarac().getCarac(carac::dexterite) + lanceur.getInv().getPrecision();
 	int evasion = cible.getcarac().getCarac(carac::agilite) + cible.getInv().gettSumEva();
 	float proba = -((evasion - 100.0f) / (evasion + 100.0f)) + (precision / (precision + 20.0f));
 	return proba;
@@ -40,7 +40,7 @@ int abilite::degatinflige(personnage const& lanceur, personnage const& cible) co
 	float bonusMagique = 1.0f;
 	bonusMagique += (intelligence - 100.0f) / (intelligence + 100.0f);
 	degat degatMagique(deg);
-	degat degatPhysique(lanceur.getInv().getArme()->getdegat());
+	degat degatPhysique(lanceur.getInv().getDegat());
 	int resultat = coef.multDeg(degatMagique.multmagique(bonusMagique) + degatPhysique.multphysique(bonusPhysique)); 
 	return resultat;
 }

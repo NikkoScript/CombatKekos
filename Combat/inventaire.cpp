@@ -2,9 +2,9 @@
 
 inventaire::inventaire() 
 {
-	slotArme = new arme();
+	slotArme = nullptr;
 	for (int k = 0; k < emplacementarmuretaille; k++) {
-		listArmure[k] = new armure();
+		listArmure[k] = nullptr;
 	}
 }
 
@@ -36,7 +36,8 @@ int inventaire::getSumArmor() const
 	int sumArmor = 0;
 	for (int k = 0; k < emplacementarmuretaille; k++)
 	{
-		sumArmor += listArmure[k]->getArmure();
+		if (listArmure[k] != nullptr)
+			sumArmor += listArmure[k]->getArmure();
 	}
 	return sumArmor;
 }
@@ -46,7 +47,8 @@ int inventaire::gettSumEva() const
 	int sumEva = 0;
 	for (int k = 0; k < emplacementarmuretaille; k++)
 	{
-		sumEva += listArmure[k]->getEvasion();
+		if(listArmure[k]!=nullptr)
+			sumEva += listArmure[k]->getEvasion();
 	}
 	return sumEva;
 }
@@ -58,17 +60,36 @@ int *inventaire::getSumResistance() const
 		sumRes[j] = 0;
 	}
 	for (int k = 0; k < emplacementarmuretaille; k++) {
-		sumRes[static_cast<int>(dmagique::feu)] += listArmure[k]->getResistance(dmagique::feu);
-		sumRes[static_cast<int>(dmagique::eau)] += listArmure[k]->getResistance(dmagique::eau);
-		sumRes[static_cast<int>(dmagique::terre)] += listArmure[k]->getResistance(dmagique::terre);
-		sumRes[static_cast<int>(dmagique::vent)] += listArmure[k]->getResistance(dmagique::vent);
-		sumRes[static_cast<int>(dmagique::ombre)] += listArmure[k]->getResistance(dmagique::lumiere);
-		sumRes[static_cast<int>(dmagique::lumiere)] += listArmure[k]->getResistance(dmagique::lumiere);
+		if (listArmure[k] != nullptr) {
+			sumRes[static_cast<int>(dmagique::feu)] += listArmure[k]->getResistance(dmagique::feu);
+			sumRes[static_cast<int>(dmagique::eau)] += listArmure[k]->getResistance(dmagique::eau);
+			sumRes[static_cast<int>(dmagique::terre)] += listArmure[k]->getResistance(dmagique::terre);
+			sumRes[static_cast<int>(dmagique::vent)] += listArmure[k]->getResistance(dmagique::vent);
+			sumRes[static_cast<int>(dmagique::ombre)] += listArmure[k]->getResistance(dmagique::lumiere);
+			sumRes[static_cast<int>(dmagique::lumiere)] += listArmure[k]->getResistance(dmagique::lumiere);
+		}
 	}
 	return sumRes;
 }
 
 classeArmure inventaire::getClasseArmure() const
 {
-	return listArmure[static_cast<int>(emplacementarmure::chest)]->getTypeArmure();
+	if (listArmure[static_cast<int>(emplacementarmure::chest)] != nullptr)
+		return listArmure[static_cast<int>(emplacementarmure::chest)]->getTypeArmure();
+	else
+		return classeArmure::legere;
+}
+
+int inventaire::getPrecision()
+{
+	if (slotArme != nullptr)
+		return slotArme->getprecision();
+	return 0;
+}
+
+degat inventaire::getDegat()
+{
+	if (slotArme != nullptr)
+		return slotArme->getdegat();
+	return degat();
 }

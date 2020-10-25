@@ -1,19 +1,19 @@
 #include "controllerPerso.h"
 
-controllerPerso::controllerPerso(personnage& p)
+controllerPerso::controllerPerso(personnage *p)
 {
-	perso = &p;
+	perso = p;
 	livresort.reserve(10);
 }
 
-void controllerPerso::setPerso(personnage& p)
+void controllerPerso::setPerso(personnage *p)
 {
-	perso = &p;
+	perso = p;
 }
 
-personnage& controllerPerso::getPerso() const
+personnage *controllerPerso::getPerso() const
 {
-	return *perso;
+	return perso;
 }
 
 std::vector<abilite> controllerPerso::getLivreSort() const

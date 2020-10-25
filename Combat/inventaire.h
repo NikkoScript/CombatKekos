@@ -8,6 +8,7 @@ private:
 	armure *listArmure[emplacementarmuretaille];
 	arme *slotArme;
 public : 
+	//instancie les tableau de pointeur a nullptr ( pas d'equipement)
 	inventaire();
 	armure *getArmure(emplacementarmure) const;
 	arme *getArme() const;
@@ -18,5 +19,8 @@ public :
 	int *getSumResistance() const;
 	// renvoie la classeArmure de l'armure chest 
 	classeArmure getClasseArmure() const;
+	int getPrecision();
+	degat getDegat();
+
 };
 
