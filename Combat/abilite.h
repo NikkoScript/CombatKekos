@@ -25,7 +25,7 @@ public :
 	// return la réussite true : coup touche , false coup manqué
 	// enleve la vie et l'energie au lanceur et cible
 	// ne vérifie pas les conditions de lancé ( energie suffisante , cooldown )
-	bool utiliser(personnage lanceur, personnage cible);
+	bool utiliser(personnage *lanceur, personnage *cible);
 	bool isequal(std::string value);
 
 };

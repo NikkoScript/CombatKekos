@@ -14,6 +14,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)sort.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)controllerPerso.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)equipe.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)combat.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)arme.h">
@@ -53,6 +54,9 @@
       <Filter>header</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)equipe.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)combat.h">
       <Filter>header</Filter>
     </ClInclude>
   </ItemGroup>

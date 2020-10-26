@@ -1,6 +1,8 @@
 #include "abilite.h"
 #include "RNGClasse.h"
 #include "coefDegPhys.h"
+#include <iostream>
+
 abilite::abilite() : deg(), nom("attaque"), consume(10), cooldown(1), bonus(1), lastuse(0)
 {
 }
@@ -45,16 +47,20 @@ int abilite::degatinflige(personnage const& lanceur, personnage const& cible) co
 	return resultat;
 }
 
-bool abilite::utiliser(personnage lanceur, personnage cible)
+bool abilite::utiliser(personnage *lanceur, personnage *cible)
 {
-	float touche = chanceToucher(lanceur, cible);
+	float touche = chanceToucher(*lanceur, *cible);
 	RNGClasse* alea = new RNGClasse();
 	//condition : echec de l'attaque? 
-	lanceur.consume(consume);
+	lanceur->consume(consume);
 	lastuse = cooldown;
-	if (touche < alea->getfloat())
+	if (touche < alea->getfloat()) {
+		std::cout << "l'attaque " + nom + " a échoué";
 		return false;
-	cible.infligedegat(degatinflige(lanceur, cible));
+	}
+	int deg = degatinflige(*lanceur,* cible);
+	std::cout << lanceur->getNom() + " utilise " + nom + " et a infligé " + std::to_string(deg) + " dégat  à " + cible->getNom();
+	cible->infligedegat(deg);
 	return true;
 }
 

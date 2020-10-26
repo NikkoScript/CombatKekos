@@ -142,6 +142,15 @@ namespace TestCombat
 			abilite ab(degat(), "test", 10, 10, 1.0f);
 			Assert::IsTrue(ab == "test");
 		}
+		TEST_METHOD(tetsuse) {
+			abilite ab(degat(10,0,0), "test", 10, 10, 1.0f);
+			personnage lanceur;
+			personnage cible;
+			if (ab.utiliser(&lanceur, &cible))
+				Assert::AreEqual(89, cible.getVieAct());
+			else
+				Assert::AreEqual(100, cible.getVieAct());
+		}
 	};
 
 	TEST_CLASS(TestCOefDegPhysique) {
