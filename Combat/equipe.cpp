@@ -30,3 +30,13 @@ bool equipe::addBackPerso(controllerPerso* perso)
 	}
 	return false;
 }
+
+controllerPerso* equipe::getFront(int k)
+{
+	return front[k];
+}
+
+controllerPerso* equipe::getBack(int k)
+{
+	return back[k];
+}

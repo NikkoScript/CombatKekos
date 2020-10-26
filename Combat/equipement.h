@@ -19,5 +19,7 @@ public :
 	bool isBreakable() const;
 	int useDura(int);
 	std::string getNom() const;
+	bool isequal(std::string value);
 };
+bool operator==(equipement e, std::string v);
 

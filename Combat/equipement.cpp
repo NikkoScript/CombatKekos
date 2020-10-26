@@ -37,7 +37,19 @@ std::string equipement::getNom() const
 	return nom;
 }
 
+bool equipement::isequal(std::string value)
+{
+	if (nom == value)
+		return true;
+	return false;
+}
+
 bool equipement::isEquipable(caracteristique c) const
 {
 	return stat.greaterthan(c);
+}
+
+bool operator==(equipement e, std::string v)
+{
+	return e.isequal(v);
 }
