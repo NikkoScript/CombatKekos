@@ -3,7 +3,6 @@
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)abilite.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)arme.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)armure.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)caracteristique.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)coefDegPhys.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)degat.cpp" />
@@ -15,6 +14,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)controllerPerso.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)equipe.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)combat.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Armurie.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)armure.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CloneEnnemy.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)arme.h">
@@ -59,10 +61,17 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)combat.h">
       <Filter>header</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Armurie.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CloneEnnemy.h">
+      <Filter>header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="header">
       <UniqueIdentifier>{0c81c446-aeec-4b38-b3f8-027dbc70eb0e}</UniqueIdentifier>
+      <Extensions>.h</Extensions>
     </Filter>
   </ItemGroup>
 </Project>

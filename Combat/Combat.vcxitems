@@ -17,7 +17,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)abilite.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)arme.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)armure.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Armurie.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)caracteristique.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CloneEnnemy.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)coefDegPhys.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)combat.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)controllerPerso.h" />
@@ -33,7 +35,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)abilite.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)arme.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)armure.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Armurie.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)caracteristique.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CloneEnnemy.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)coefDegPhys.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)combat.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)controllerPerso.cpp" />

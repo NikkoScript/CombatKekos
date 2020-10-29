@@ -7,7 +7,7 @@
 #include <iostream>
 #include "coefDegPhys.h"
 #include "controllerPerso.h"
-
+#include "Armurie.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace TestCombat
@@ -208,6 +208,15 @@ namespace TestCombat
 			controllerPerso cperso1(perso1);
 			Assert::AreEqual(perso1->getNom(), cperso1.getPerso()->getNom());
 
+		}
+	};
+	TEST_CLASS(TestArmurie) {
+		TEST_METHOD(testcreate) {
+			Armurie* amory = new Armurie();
+			Assert::IsTrue(amory->addArme(arme(caracteristique(), "épée de fer", degat(10, 0, 0), 100, false)));
+			Assert::IsFalse(amory->addArme(arme(caracteristique(), "épée de fer", degat(10, 0, 0), 100, false)));
+			Assert::IsTrue(amory->createArme("épée de fer") != nullptr);
+			delete amory;
 		}
 	};
 }
