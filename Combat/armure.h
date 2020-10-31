@@ -16,6 +16,8 @@ public :
     //les deux constructeur initiliase la liste de resistance à 0
     armure();     
     armure(caracteristique, std::string, int, int, classeArmure,emplacementarmure);
+    //constructeur avec liste de resistance
+    armure(caracteristique, std::string, int eva, int armor, classeArmure, emplacementarmure, int res[dmagiquetaille]);
 
     void setResistance(dmagique, int);
     int getEvasion() const;

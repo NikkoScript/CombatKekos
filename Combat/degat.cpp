@@ -48,6 +48,15 @@ degat::degat(int perf, int impact, int tranchant, int feu, int eau, int terre, i
 	degatmagique[5] = lumiere;
 }
 
+degat::degat(int dgp[dphysiquetaille], int dgm[dmagiquetaille] )
+{
+	for (int k = 0; k < dphysiquetaille; k++)
+		degatphysique[k] = dgp[k];
+	for (int j = 0; j < dmagiquetaille; j++)
+		degatmagique[j] = dgm[j];
+}
+
+
 int degat::getdegatphysique(dphysique d) const
 {
 	return degatphysique[static_cast<int>(d)];

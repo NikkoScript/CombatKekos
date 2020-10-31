@@ -8,6 +8,7 @@ private :
 	caracteristique stat;
 	int duramax, duraact;
 	std::string nom;
+	
 public :
 	equipement();
 	equipement(caracteristique , std::string);

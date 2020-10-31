@@ -16,6 +16,7 @@ public :
 	degat(int, int, int);
 	degat(int, int, int, int, int, int);
 	degat(int, int, int, int, int, int, int, int, int);
+	degat(int[dphysiquetaille], int[dmagiquetaille]);
 	int getdegatphysique(dphysique) const;
 	int getdegatmagique(dmagique) const;
 	degat& adddegat(degat const&);

@@ -11,7 +11,7 @@ public :
 	//instancie les tableau de pointeur a nullptr ( pas d'equipement)
 	// n'est pas responsable de la création et destruction des équipements
 	inventaire();
-	//inventaire(inventaire const& copy);
+	inventaire(inventaire const& copy);
 	armure *getArmure(emplacementarmure) const;
 	arme *getArme() const;
 	void setArmure(armure *);

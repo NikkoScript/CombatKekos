@@ -20,6 +20,7 @@ private :
 public: 
 	personnage();
 	personnage(std::string);
+	personnage(std::string name, int hpmax, caracteristique c);
 	caracteristique getcarac() const;
 	bool isalive() const;
 	int getVieMax() const;

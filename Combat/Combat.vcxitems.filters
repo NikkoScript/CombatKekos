@@ -17,6 +17,8 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Armurie.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)armure.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)CloneEnnemy.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ConfigFile.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sacInventaire.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)arme.h">
@@ -67,6 +69,10 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)CloneEnnemy.h">
       <Filter>header</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ConfigFile.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)sacInventaire.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="header">

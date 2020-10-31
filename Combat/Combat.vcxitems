@@ -29,6 +29,8 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)inventaire.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)personnage.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)RNGClasse.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ConfigFile.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sacInventaire.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)sort.h" />
   </ItemGroup>
   <ItemGroup>
@@ -47,6 +49,8 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)inventaire.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)personnage.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)RNGClasse.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ConfigFile.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sacInventaire.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)sort.cpp" />
   </ItemGroup>
 </Project>

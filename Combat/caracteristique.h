@@ -11,8 +11,8 @@ private :
 	
 public:
 	caracteristique();
-	// constructeur avec carac perso ( pour equipement ) 
-	caracteristique(int, int, int, int, int);
+	// constructeur avec carac perso ( pour equipement ou personnage avec stat non par defaut ) 
+	caracteristique(int f, int s, int a, int d, int i);
 	// constructeur avec point d'attribution perso ( 10 par niveau)
 	caracteristique(int);
 	// améliore la stat en paramètre si il reste des point d'attribution retourne la résuiite de l'incrément 

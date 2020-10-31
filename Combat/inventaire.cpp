@@ -7,7 +7,7 @@ inventaire::inventaire()
 		listArmure[k] = nullptr;
 	}
 }
-/*
+
 inventaire::inventaire(inventaire const& copy)
 {
 	if (copy.slotArme == nullptr)
@@ -16,13 +16,13 @@ inventaire::inventaire(inventaire const& copy)
 		slotArme = new arme(*copy.slotArme);
 	for (int k = 0; k < emplacementarmuretaille; k++) {
 		if (copy.listArmure[k] == nullptr)
-			listArmure[k] == nullptr;
+			listArmure[k] = nullptr;
 		else
 			listArmure[k] = new armure(*copy.listArmure[k]);
 	}
 
 }
-*/
+
 
 armure *inventaire::getArmure(emplacementarmure e) const
 {

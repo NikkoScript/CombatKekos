@@ -1,0 +1,11 @@
+arme
+precision 0
+sagesse 50
+intelligence 100
+force 50
+dexterite 100
+agilite 100
+nom baton_de_fer
+degatphysique 0 10 0
+degatmagique 0 0 0 0 0 0 
+####

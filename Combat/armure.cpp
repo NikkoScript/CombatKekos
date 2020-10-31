@@ -13,6 +13,12 @@ armure::armure(caracteristique c, std::string n, int e, int a, classeArmure t,em
 		resistance[k] = 0;
 }
 
+armure::armure(caracteristique c, std::string n, int eva, int armor, classeArmure t, emplacementarmure emp, int res[dmagiquetaille]) : armure(c,n,eva,armor,t,emp)
+{ 
+	for (int k = 0; k < dmagiquetaille; k++)
+		resistance[k] = res[k];
+}
+
 
 void armure::setResistance(dmagique d, int v)
 {

@@ -2,10 +2,12 @@
 
 equipement::equipement() : stat(),duramax(100),duraact(100),nom("none")
 {
+	equipBy = nullptr;
 }
 
 equipement::equipement(caracteristique c, std::string n) : stat(c), duramax(100), duraact(100),nom(n)
 {
+	equipBy = nullptr;
 }
 
 

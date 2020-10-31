@@ -25,6 +25,7 @@ caracteristique::caracteristique(int f, int s , int a, int d, int i)
 }
 
 
+
 caracteristique::caracteristique(int lvl)
 {
 	caracteristique();

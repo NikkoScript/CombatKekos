@@ -13,7 +13,7 @@ private :
 public: 
 
     arme();
-    arme(caracteristique, std::string,degat, int, bool);
+    arme(caracteristique c, std::string n,degat d, int precis, bool twohan);
  
     degat getdegat() const ;
     int getprecision() const;

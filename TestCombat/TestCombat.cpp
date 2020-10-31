@@ -8,6 +8,8 @@
 #include "coefDegPhys.h"
 #include "controllerPerso.h"
 #include "Armurie.h"
+#include "CloneEnnemy.h"
+#include "ConfigFile.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace TestCombat
@@ -218,5 +220,17 @@ namespace TestCombat
 			Assert::IsTrue(amory->createArme("épée de fer") != nullptr);
 			delete amory;
 		}
+	};
+
+	TEST_CLASS(TestCOnfigFile)
+	{
+		TEST_METHOD(Testcreate) {
+			Armurie* amory = new Armurie();
+			CloneEnnemy* clo = new CloneEnnemy();
+			ConfigFile* test = new ConfigFile(amory, clo, "C:\\Users\\nicol\\source\\repos\\NikkoScript\\CombatKekos\\TestCombat\\testarme.txt");
+			test->Lecturefichier();
+			Assert::IsTrue(amory->createArme("baton_de_fer") != nullptr);
+		}
+		
 	};
 }

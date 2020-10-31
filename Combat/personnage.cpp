@@ -8,6 +8,10 @@ personnage::personnage(std::string n) :  carac(), vieMax(100), vieAct(100), ener
 {
 }
 
+personnage::personnage(std::string name, int hpmax, caracteristique c) : carac(c), vieAct(hpmax), vieMax(hpmax), energieAct(100), energieMax(100), nom(name)
+{
+}
+
 caracteristique personnage::getcarac() const
 {
 	return carac;
