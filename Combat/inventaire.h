@@ -16,6 +16,8 @@ public :
 	arme *getArme() const;
 	void setArmure(armure *);
 	void setArme(arme *);
+	//recoit en paramêtre un equiepement et l'equipe
+	void setEquipement(equipement*);
 	int getSumArmor() const;
 	int gettSumEva() const;
 	int *getSumResistance() const;

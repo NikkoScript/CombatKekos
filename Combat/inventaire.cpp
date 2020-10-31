@@ -46,6 +46,14 @@ void inventaire::setArme(arme* a)
 	slotArme = a;
 }
 
+void inventaire::setEquipement(equipement* e)
+{
+	if (e->gettype() == typeequipement::arme)
+		setArme((arme*)e);
+	else if (e->gettype() == typeequipement::armure)
+		setArmure((armure*)e);
+}
+
 int inventaire::getSumArmor() const
 {
 	int sumArmor = 0;

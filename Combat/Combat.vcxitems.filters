@@ -1,24 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)abilite.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)arme.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)caracteristique.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)coefDegPhys.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)degat.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)equipement.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)inventaire.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)personnage.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)RNGClasse.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)sort.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)controllerPerso.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)equipe.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)combat.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)Armurie.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)armure.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)CloneEnnemy.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)ConfigFile.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)sacInventaire.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sort.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)abilite.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)arme.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)armure.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Armurie.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)caracteristique.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CloneEnnemy.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)coefDegPhys.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)combat.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ConfigFile.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)controllerPerso.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)degat.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)equipe.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)equipement.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)inventaire.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)personnage.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)RNGClasse.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)sacInventaire.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)arme.h">
@@ -72,12 +108,18 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)ConfigFile.h">
       <Filter>header</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)sacInventaire.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sacInventaire.h">
+      <Filter>header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="header">
       <UniqueIdentifier>{0c81c446-aeec-4b38-b3f8-027dbc70eb0e}</UniqueIdentifier>
-      <Extensions>.h</Extensions>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{d26f2663-8bc8-408d-87a3-c58aaf61869d}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
     </Filter>
   </ItemGroup>
 </Project>

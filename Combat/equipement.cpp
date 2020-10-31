@@ -1,13 +1,20 @@
 #include "equipement.h"
 
-equipement::equipement() : stat(),duramax(100),duraact(100),nom("none")
+equipement::equipement() : stat(), duramax(100), duraact(100), nom("none"), type(typeequipement::armure)
 {
-	equipBy = nullptr;
 }
 
-equipement::equipement(caracteristique c, std::string n) : stat(c), duramax(100), duraact(100),nom(n)
+equipement::equipement(caracteristique c, std::string n) : stat(c), duramax(100), duraact(100),nom(n), type(typeequipement::armure)
 {
-	equipBy = nullptr;
+}
+
+equipement::equipement(caracteristique c, std::string n, typeequipement t) : equipement(c,n)
+{
+	type = t;
+}
+
+equipement::~equipement()
+{
 }
 
 
@@ -32,6 +39,11 @@ int equipement::useDura(int i)
 	if (duraact < 0)
 		duraact = 0;
 	return duraact;
+}
+
+typeequipement equipement::gettype()
+{
+	return type;
 }
 
 std::string equipement::getNom() const

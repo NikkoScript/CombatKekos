@@ -4,7 +4,7 @@ arme::arme() : degatarme(), precision(0), twohanded(false)
 {
 }
 
-arme::arme(caracteristique c, std::string n, degat d, int p, bool t) : equipement(c,n), degatarme(d), precision(p), twohanded(t)
+arme::arme(caracteristique c, std::string n, degat d, int p, bool t) : equipement(c,n,typeequipement::arme), degatarme(d), precision(p), twohanded(t)
 {
 }
 

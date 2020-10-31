@@ -1,6 +1,7 @@
 #pragma once
 #include "caracteristique.h"
 #include <string>
+enum class typeequipement{arme,armure};
 class equipement
 { 
 private : 
@@ -8,10 +9,13 @@ private :
 	caracteristique stat;
 	int duramax, duraact;
 	std::string nom;
+	typeequipement type;
 	
 public :
 	equipement();
 	equipement(caracteristique , std::string);
+	equipement(caracteristique c, std::string n, typeequipement t);
+	virtual ~equipement();
 	/*repare equipement de la valeur en parametre
 	renvoi la valeur modifié*/
 	int reparer(int);
@@ -19,6 +23,7 @@ public :
 	bool isEquipable(caracteristique) const ;
 	bool isBreakable() const;
 	int useDura(int);
+	typeequipement gettype();
 	std::string getNom() const;
 	bool isequal(std::string value);
 };

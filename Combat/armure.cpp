@@ -7,7 +7,7 @@ armure::armure() : equipement() , evasion(0), armor(0),typeArmure(classeArmure::
 		resistance[k] = 0;
 }
 
-armure::armure(caracteristique c, std::string n, int e, int a, classeArmure t,emplacementarmure emp) :equipement(c,n), evasion(e),armor(a),typeArmure(t),emplacement(emp)
+armure::armure(caracteristique c, std::string n, int e, int a, classeArmure t,emplacementarmure emp) :equipement(c,n,typeequipement::armure), evasion(e),armor(a),typeArmure(t),emplacement(emp)
 {
 	for (int k = 0; k < dmagiquetaille; k++)
 		resistance[k] = 0;
