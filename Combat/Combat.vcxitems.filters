@@ -122,4 +122,7 @@
       <Extensions>*.cpp</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)TemplateConfigPersoArmeArmure.txt" />
+  </ItemGroup>
 </Project>

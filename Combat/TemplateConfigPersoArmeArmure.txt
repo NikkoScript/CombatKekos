@@ -1,0 +1,32 @@
+#com
+debut d'un commentaire ( signalé par le pattern ci dessus)
+Perso
+vie 150
+sagesse 100
+intelligence 100
+force 100
+dexterite 100
+agilite 100
+nom TemplateTest
+####
+Arme
+precision 20
+sagesse 100
+...
+agilite 100
+nom Epee_de_fer
+degatphysique 10 0 10 (perforant impact tranchant)
+degatmagique 0 0 0 10 0 0 (feu eau terre vent ombre lumiere)
+####
+Armure
+evasion 50
+armure 50
+sagesse 100
+...
+agilite 100
+nom chestplate_fer
+emplacement 0 (0 : chest, 1 : leg, 2: head, 3 :hand )
+typearmure 2 (0 : legere, 1 : moyenne, 2 : lourde)
+resistance 10 10 10 10 10 10 (feu eau terre vent ombre lumiere)
+####
+#fincom

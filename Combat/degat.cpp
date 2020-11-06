@@ -104,6 +104,55 @@ degat& degat::operator+=(degat const& a)
 	return *this ;
 }
 
+std::string degat::phyisqueToString(dphysique d)
+{
+	std::string res="";
+	switch (d)
+	{
+	case dphysique::perforant:
+		res="per";
+		break;
+	case dphysique::impact:
+		res = "imp";
+		break;
+	case dphysique::tranchant:
+		res = "tra";
+		break;
+	default:
+		break;
+	}
+	return res;
+}
+
+std::string degat::magiqueToString(dmagique d)
+{
+	std::string res = "";
+	switch (d)
+	{
+	case dmagique::feu:
+		res = "feu";
+		break;
+	case dmagique::eau:
+		res = "eau";
+		break;
+	case dmagique::terre:
+		res = "ter";
+		break;
+	case dmagique::vent:
+		res = "ven";
+		break;
+	case dmagique::ombre:
+		res = "omb";
+		break;
+	case dmagique::lumiere:
+		res = "lum";
+		break;
+	default:
+		break;
+	}
+	return res;
+}
+
 degat operator+(degat const& a , degat const& b )
 {
 	degat copie(a);

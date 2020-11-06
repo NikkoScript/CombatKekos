@@ -23,7 +23,8 @@ public :
 	bool isEquipable(caracteristique) const ;
 	bool isBreakable() const;
 	int useDura(int);
-	typeequipement gettype();
+	typeequipement gettype() const;
+	caracteristique getStat() const;
 	std::string getNom() const;
 	bool isequal(std::string value);
 };

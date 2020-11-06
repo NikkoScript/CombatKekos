@@ -53,4 +53,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)sacInventaire.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)sort.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)TemplateConfigPersoArmeArmure.txt" />
+  </ItemGroup>
 </Project>

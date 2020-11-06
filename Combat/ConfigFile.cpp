@@ -14,21 +14,30 @@ void ConfigFile::Lecturefichier()
 	if (fileLecture)
 	{
 		std::string mot;
-		fileLecture >> mot;
-		if (mot == "arme")
-			LectureArme();
-		else if (mot == "armure")
-			LectureArmure();
-		else if (mot == "perso")
-			LecturePerso();
-		else
-			std::cerr << "erreur dans la structure du fichier de config equipement et personnage";
+		while (std::getline(fileLecture,mot) ){
+			if (mot == "arme")
+				LectureArme();
+			else if (mot == "armure")
+				LectureArmure();
+			else if (mot == "perso")
+				LecturePerso();
+			// lecture d'un commentaire.
+			else if (mot == "#com")
+			{
+				do {
+					fileLecture >> mot;
+				} while (mot != "#fincom");
+
+			}
+			else
+				std::cerr << "erreur dans la structure du fichier de config equipement et personnage";
+		}
 	}
 }
 
 void ConfigFile::LectureArme()
 {
-	int sagesse = 100, intelligence = 100, force = 100, dexterite = 100, agilite = 100;
+	int sagesse = 0, intelligence = 0, force = 0, dexterite = 0, agilite = 0;
 	std::string mot;
 	std::string nom;
 	int prec=0;
@@ -73,7 +82,7 @@ void ConfigFile::LectureArme()
 
 void ConfigFile::LectureArmure()
 {
-	int sagesse = 100, intelligence = 100, force = 100, dexterite = 100, agilite = 100;
+	int sagesse = 0, intelligence = 0, force = 0, dexterite = 0, agilite = 0;
 	std::string mot;
 	std::string nom;
 	int eva=0, armo=0;

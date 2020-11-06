@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 enum class dphysique{perforant,impact,tranchant};
 const int dphysiquetaille = 3;
 enum class dmagique{feu,eau,terre,vent,ombre,lumiere};
@@ -23,6 +24,8 @@ public :
 	degat multphysique(float value);
 	degat multmagique(float value);
 	degat& operator+=(degat const& a);
+	static std::string phyisqueToString(dphysique d);
+	static std::string magiqueToString(dmagique d);
 
 };
 

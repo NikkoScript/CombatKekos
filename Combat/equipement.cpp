@@ -41,9 +41,14 @@ int equipement::useDura(int i)
 	return duraact;
 }
 
-typeequipement equipement::gettype()
+typeequipement equipement::gettype() const
 {
 	return type;
+}
+
+caracteristique equipement::getStat() const
+{
+	return stat;
 }
 
 std::string equipement::getNom() const
